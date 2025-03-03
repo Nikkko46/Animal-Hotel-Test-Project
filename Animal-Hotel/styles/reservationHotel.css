@@ -1,0 +1,251 @@
+.welcome-section {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+}
+
+.welcome-section h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.feature-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.feature-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-image {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.feature-content {
+    padding: 2rem;
+    width: 50%;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.amenity-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.amenity-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.pricing-overview {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.benefits-list i {
+    color: #4ECDC4;
+}
+
+.reservation-separator {
+    height: 2px;
+    background: #ddd;
+    margin: 3rem 0;
+}
+
+.reservation-container {
+    border: 1px solid #ddd;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-section:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.amenity-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.reservation-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.reservation-options {
+    margin: 2rem 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.pet-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.pet-grid th,
+.pet-grid td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.select-btn {
+    background: #4ECDC4;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background: #4ECDC4;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #45b8b0;
+}
+
+.message {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.message.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.message.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+datalist {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0 0 6px 6px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.date-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.date-input {
+    flex: 1;
+}
+
+.date-picker {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.invalid-date {
+    border-color: #dc3545;
+}
+
+.date-error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}

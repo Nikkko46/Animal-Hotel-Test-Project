@@ -1,0 +1,260 @@
+.breed-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+    z-index: 1;
+}
+
+.breed-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.breed-card:hover {
+    transform: translateY(-5px);
+}
+
+.breed-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.breed-info {
+    padding: 1.5rem;
+}
+
+.breed-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.breed-description {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.breed-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.breed-details.active {
+    max-height: 500px;
+}
+
+.toggle-details {
+    background: none;
+    border: none;
+    color: #4ECDC4;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.visitor-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.visitor-count {
+    color: #666;
+}
+
+.new-visitor-btn {
+    background: #4ECDC4;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.new-visitor-btn:hover {
+    background: #3dbdb4;
+}
+
+.breed-actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.breed-action-btn {
+    background: rgba(255,255,255,0.9);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.breed-action-btn:hover {
+    background: #4ECDC4;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .breeds-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .breed-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .breeds-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .content {
+        margin-top: 60px;
+        padding: 1rem;
+    }
+
+    .breed-image {
+        height: 150px;
+    }
+
+    .breed-info {
+        padding: 1rem;
+    }
+
+    .breed-name {
+        font-size: 1.1rem;
+    }
+
+    .breed-description {
+        font-size: 0.9rem;
+    }
+
+    .breed-actions {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .breed-action-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Small devices improvements */
+@media screen and (max-width: 480px) {
+    .breed-container {
+        gap: 20px;
+    }
+
+    .visitor-section {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .breed-details {
+        font-size: 0.9rem;
+    }
+
+    .toggle-details {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (hover: none) {
+    .breed-action-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .toggle-details {
+        padding: 12px;
+    }
+
+    .new-visitor-btn {
+        padding: 12px 20px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .breed-card {
+        background: #2a2a2a;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .breed-name {
+        color: #fff;
+    }
+
+    .breed-description {
+        color: #ccc;
+    }
+}
+
+@media print {
+    .breed-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .breed-actions,
+    .toggle-details,
+    .visitor-section {
+        display: none;
+    }
+
+    .breed-details {
+        max-height: none !important;
+        display: block !important;
+    }
+}
+
+@media (forced-colors: active) {
+    .breed-card {
+        border: 2px solid CanvasText;
+    }
+
+    .breed-action-btn,
+    .new-visitor-btn,
+    .toggle-details {
+        border: 1px solid CanvasText;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .breed-card {
+        transition: none;
+    }
+
+    .breed-details {
+        transition: none;
+    }
+}

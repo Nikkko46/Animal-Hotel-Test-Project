@@ -1,0 +1,142 @@
+.pet-dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.pet-profile-section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.pet-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pet-image-container {
+    text-align: center;
+}
+
+.pet-profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #4ECDC4;
+}
+
+.pet-basic-info {
+    flex: 1;
+}
+
+.pet-tags {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.pet-tag {
+    background: #4ECDC4;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.pet-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.detail-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.detail-card h3 {
+    color: #4ECDC4;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.detail-item {
+    margin-bottom: 1rem;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #666;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.detail-value {
+    color: #333;
+}
+
+.upload-btn {
+    background: #4ECDC4;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.upload-btn:hover {
+    background: #3dbdb5;
+}
+
+.edit-textbox {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+}
+
+.pet-profile-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.action-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.action-btn.primary {
+    background: #4ECDC4;
+    color: white;
+}
+
+.action-btn.primary:hover {
+    background: #3dbdb5;
+}
+
+.action-btn.danger {
+    background: #FF6B6B;
+    color: white;
+}
+
+.action-btn.danger:hover {
+    background: #ff5252;
+}

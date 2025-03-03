@@ -1,0 +1,71 @@
+.pet-profile-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-title {
+    text-align: center;
+    color: #4ECDC4;
+    margin-bottom: 2rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
+
+.form-wrapper {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-input {
+    padding: 0.75rem;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #4ECDC4;
+    outline: none;
+}
+
+.textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.file-upload {
+    padding: 0.5rem;
+    background: #f5f7fa;
+}
+
+.submit-btn {
+    background: #4ECDC4;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background: #45b8b0;
+}
+
+.button-group {
+    text-align: center;
+}
